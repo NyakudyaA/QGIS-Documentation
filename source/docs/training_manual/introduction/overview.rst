@@ -11,7 +11,7 @@ interface.
 |basic| |TY|: The Basics
 -------------------------------------------------------------------------------
 
-.. image:: /static/training_manual/interface/gui_numbered.png
+.. image::static/training_manual/interface/gui_numbered.png
    :align: center
 
 The elements identified in the figure above are:
@@ -106,7 +106,7 @@ Try to find each of these tools on your screen. What is their purpose?
 
 3. |mActionWhatsThis|
 
-4. .. image:: /static/training_manual/interface/toggle_render.png
+4. .. image:: static/training_manual/interface/toggle_render.png
 
 5. |mActionMeasure|
 
