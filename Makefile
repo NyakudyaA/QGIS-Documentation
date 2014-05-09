@@ -103,35 +103,7 @@ pdf: html
 	# as alternative we can use platex
 	# for russian pdf you need package 'texlive-lang-cyrillic' installed
 	# for japanese pdf you need: 'cmap-adobe-japan1 cmap-adobe-japan2 latex-cjk-all nkf okumura-clsfiles ptex-base ptex-bin texlive-fonts-extra'
-	@-if [ $(LANG) = "ja" ]; then \
-		cd $(BUILDDIR)/latex/$(LANG); \
-		nkf -W -e --overwrite QGISUserGuide.tex; \
-		platex -interaction=batchmode -kanji=euc -shell-escape QGISUserGuide.tex; \
-		platex -interaction=batchmode -kanji=euc -shell-escape QGISUserGuide.tex; \
-		platex -interaction=batchmode -kanji=euc -shell-escape QGISUserGuide.tex; \
-		dvipdfmx QGISUserGuide.dvi; \
-	else \
-		cd $(BUILDDIR)/latex/$(LANG); \
-		texi2pdf --quiet QGISUserGuide.tex; \
-		texi2pdf --quiet QGISUserGuide.tex; \
-		texi2pdf --quiet QGISUserGuide.tex; \
-	fi
-	mv $(BUILDDIR)/latex/$(LANG)/QGISUserGuide.pdf $(BUILDDIR)/pdf/$(LANG)/QGIS-$(VERSION)-UserGuide.pdf
-	# pyqgis developer cookbook
-	@-if [ $(LANG) = "ja" ]; then \
-		cd $(BUILDDIR)/latex/$(LANG); \
-		nkf -W -e --overwrite PyQGISDeveloperCookbook.tex; \
-		platex -interaction=batchmode -kanji=euc -shell-escape PyQGISDeveloperCookbook.tex; \
-		platex -interaction=batchmode -kanji=euc -shell-escape PyQGISDeveloperCookbook.tex; \
-		platex -interaction=batchmode -kanji=euc -shell-escape PyQGISDeveloperCookbook.tex; \
-		dvipdfmx PyQGISDeveloperCookbook.dvi; \
-	else \
-		cd $(BUILDDIR)/latex/$(LANG); \
-		texi2pdf --quiet PyQGISDeveloperCookbook.tex; \
-		texi2pdf --quiet PyQGISDeveloperCookbook.tex; \
-		texi2pdf --quiet PyQGISDeveloperCookbook.tex; \
-	fi
-	mv $(BUILDDIR)/latex/$(LANG)/PyQGISDeveloperCookbook.pdf $(BUILDDIR)/pdf/$(LANG)/QGIS-$(VERSION)-PyQGISDeveloperCookbook.pdf
+	
 	# training manual
 	@-if [ $(LANG) = "ja" ]; then \
 		cd $(BUILDDIR)/latex/$(LANG); \
