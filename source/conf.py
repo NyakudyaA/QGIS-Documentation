@@ -128,7 +128,7 @@ html_static_path = ['../themes/qgis-theme/static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-html_last_updated_fmt = '%k:%M %b %d, %Y'
+html_last_updated_fmt = '%H:%M %b %d, %Y'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -479,6 +479,18 @@ rst_epilog = """
    :width: 1.5em
 .. |mActionAlignBottom|  image:: /static/common/mActionAlignBottom.png
    :width: 1.5em
+.. |mIconAtlas|  image:: /static/common/mIconAtlas.png
+   :width: 1.5em
+.. |mActionAtlasFirst|  image:: /static/common/mActionAtlasFirst.png
+   :width: 1.5em
+.. |mActionAtlasLast|  image:: /static/common/mActionAtlasLast.png
+   :width: 1.5em
+.. |mActionAtlasNext|  image:: /static/common/mActionAtlasNext.png
+   :width: 1.5em
+.. |mActionAtlasPrev|  image:: /static/common/mActionAtlasPrev.png
+   :width: 1.5em
+.. |mActionAtlasSettings|  image:: /static/common/mActionAtlasSettings.png
+   :width: 1.5em
 .. |mIconLock|  image:: /static/common/mIconLock.png
    :width: 1.5em
 .. |mActionFileExit| image:: /static/common/mActionFileExit.png
@@ -592,6 +604,8 @@ rst_epilog = """
    :width: 1.5em
 .. |mActionRemoveLayer| image:: /static/common/mActionRemoveLayer.png
    :width: 1.5em
+.. |mActionDuplicateLayer| image:: /static/common/mActionDuplicateLayer.png
+   :width: 1.5em
 .. |mActionLabeling| image:: /static/common/mActionLabeling.png
    :width: 1.5em
 .. |mActionInOverview| image:: /static/common/mActionInOverview.png
@@ -704,6 +718,10 @@ rst_epilog = """
 .. |mActionSaveEdits| image:: /static/common/mActionSaveEdits.png
    :width: 1.5em
 .. |mActionAddPart| image:: /static/common/mActionAddPart.png
+   :width: 1.5em
+.. |mActionFillRing| image:: /static/common/mActionFillRing.png
+   :width: 1.5em
+.. |mActionSplitParts| image:: /static/common/mActionSplitParts.png
    :width: 1.5em
 .. |mActionIdentifyExpand| image:: /static/common/mActionExpandTree.png
    :width: 1.5em
@@ -1021,6 +1039,30 @@ rst_epilog = """
 .. |plugin_installed| image:: /static/common/plugin-installed.png
    :width: 1.5em
 .. |plugin_upgrade| image:: /static/common/plugin-upgrade.png
+   :width: 1.5em
+.. |analysis| image:: /static/common/analysis.png
+   :width: 1.5em
+.. |geRasterometry| image:: /static/common/geometry.png
+   :width: 1.5em
+.. |geoprocessing| image:: /static/common/geoprocessing.png
+   :width: 1.5em
+.. |management| image:: /static/common/management.png
+   :width: 1.5em
+.. |sampling| image:: /static/common/sampling.png
+   :width: 1.5em
+.. |mActionRemove| image:: /static/common/mActionRemove.png
+   :width: 1.5em
+.. |mActionLink| image:: /static/common/mActionLink.png
+   :width: 1.5em
+.. |mActionUnlink| image:: /static/common/mActionUnlink.png
+   :width: 1.5em
+.. |create_gpx| image:: /static/common/create_gpx.png
+   :width: 1.5em
+.. |import_gpx| image:: /static/common/import_gpx.png
+   :width: 1.5em
+.. |mActionFullHistogramStretch| image:: /static/common/mActionFullHistogramStretch.png
+   :width: 1.5em
+.. |mActionLocalHistogramStretch| image:: /static/common/mActionLocalHistogramStretch.png
    :width: 1.5em
 
 .. |basic| image:: /static/training_manual/global/basic.png
